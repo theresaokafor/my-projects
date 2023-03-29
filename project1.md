@@ -71,7 +71,7 @@ sudo vi index.html #paste a welcome page
 #reload browser page to see the contents using http://<Public-IP-Address>:80
 ```
 
-image.png
+![Screenshot 2023-03-29 144442](https://user-images.githubusercontent.com/124391569/228637447-9ef4791e-fbc5-484d-9e09-206e8099cd1a.png)
 
 # *step 5: enable php on the website*
 Here, we need to update the order of the dir.conf file to ensure the 
