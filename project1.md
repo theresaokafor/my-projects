@@ -14,7 +14,7 @@ curl http://localhost:80
 # obtain ip address using the command below
 curl -s http://169.254.169.254/latest/meta-data/public-ipv4
 ```
-image.png
+![Screenshot 2023-03-29 144038](https://user-images.githubusercontent.com/124391569/228636500-0171aa5b-d913-4239-b9b9-03bae90ed030.png)
 
 *access over web using pub IP or pub DNS*
 http://<Public-IP-Address>:80
