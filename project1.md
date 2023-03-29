@@ -1,7 +1,7 @@
 # Lamp Stack Implementation
 # *step 1: launched an ubuntu instance and installed apache using the following commands*
 
-image.png
+![Screenshot 2023-03-29 144246](https://user-images.githubusercontent.com/124391569/228637016-9630c6e9-d907-4faa-9915-7ed665c2bfe8.png)
 
 ```bash
 # run an update
