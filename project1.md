@@ -87,6 +87,6 @@ sudo vi /var/www/myprojectlamp/index.php
 <?php
 phpinfo();
 ```
-image.png
+![php page](https://user-images.githubusercontent.com/124391569/228635343-42101a20-0cbe-428a-8c06-f4d70b0cf8d8.png)
 
 # *voila! this concludes our lamp stack implementation.*
