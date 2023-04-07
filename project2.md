@@ -92,7 +92,7 @@ sudo vi info.php #paste a welcome page
 ```
 
 ![syntax Validation](syntax_check.png)
-![home](hombe_page.png)
+![home](home_page.png)
 
 # *step 5: test php with Nginx*
 Here, we need to create a test php file (info.php) in document root 
@@ -137,7 +137,7 @@ INSERT INTO Tess_database.my_table (content) VALUES ("My third item");
 SELECT * FROM Tess_database.my_table;  
 exit # exit shell
 ```
-![sqlDB](table_created.png)
+![sqlDB]("C:\Users\frank\OneDrive\Desktop\table_created.png")
 ![sqlTable](inserted_content.png)
 
 # *step 6: create a php script to connect to mysql & query the content*
