@@ -1,7 +1,7 @@
 # Lemp Stack Implementation
 # *step 1: launched an ubuntu instance and installed nginx using the following commands*
 
-![nginx_server](webserver.png)
+![webserver](https://user-images.githubusercontent.com/124391569/230684079-4879ee6f-d0ae-4922-b669-aff33675cc65.png)
 
 ```bash
 # run an update
@@ -12,12 +12,12 @@ sudo apt install nginx
 sudo systemctl status nginx
 curl http://localhost:80   #to access server locally
 ```
-![nginx](nginx_installed.png)
-![nginx](nginxup.png)
+![nginxup](https://user-images.githubusercontent.com/124391569/230684772-f453c77c-271a-4920-88a1-63a0b272a420.png)
+![nginx_installed](https://user-images.githubusercontent.com/124391569/230684860-7fb8cb47-12ad-40ff-adde-aaff3d38a9e2.png)
 
 *access over web using pub IP or pub DNS*
 http://<Public-IP-Address>:80
-![nginx](nginx_page.png)
+![nginx_page](https://user-images.githubusercontent.com/124391569/230684829-240134fa-e9f7-4ac1-b8e9-a3d6c28bc38b.png)
 
 # *step 2: Installed mysql (the DB management system). To store and manage data for our site*
 ```bash
@@ -32,7 +32,7 @@ sudo mysql -p
 exit
 ```
 
-![nginx](mysql.png)
+![mysql](https://user-images.githubusercontent.com/124391569/230684942-ac37e446-384b-48ba-8346-221b74fe767c.png)
 
 # *step 3: Installed php (this displays the content of the site to users)*
 ```bash
@@ -41,7 +41,7 @@ sudo apt install php-fpm php-mysql
 php -v    # confirm php is installed by checking the version
 ```
 
-![nginx](php_installed.png)
+![php_installed](https://user-images.githubusercontent.com/124391569/230684629-1d4940de-5a87-45f1-a5e5-48832f875b17.png)
 
 # *step 4: Configure Nginx to use PHP processor*
 1. set up a domain called projectlemp in /var/wwww directory by creating a direcrtory called <projectlemp>
@@ -91,8 +91,8 @@ sudo vi info.php #paste a welcome page
 #reload browser page to see the contents using http://<Public-IP-Address>:80
 ```
 
-![syntax Validation](syntax_check.png)
-![home](home_page.png)
+![syntax_check](https://user-images.githubusercontent.com/124391569/230684359-0e0e0114-14e7-4eb6-9bca-dbca6a7b1a50.png)
+![home_page](https://user-images.githubusercontent.com/124391569/230685064-3a14d406-de4e-483a-8518-ba67a6337e1b.png)
 
 # *step 5: test php with Nginx*
 Here, we need to create a test php file (info.php) in document root 
@@ -103,7 +103,7 @@ sudo vi /var/www/projectlemp/info.php
 <?php
 phpinfo();
 ```
-![php_page](php_page.png)
+![php_page](https://user-images.githubusercontent.com/124391569/230684501-5e831b74-18b9-4280-8b61-1e37749e8ba8.png)
 
 ```bash
 # endeavor to remove the file created as it contains sensitive info
@@ -137,8 +137,8 @@ INSERT INTO Tess_database.my_table (content) VALUES ("My third item");
 SELECT * FROM Tess_database.my_table;  
 exit # exit shell
 ```
-![sqlDB]("C:\Users\frank\OneDrive\Desktop\table_created.png")
-![sqlTable](inserted_content.png)
+![table_created](https://user-images.githubusercontent.com/124391569/230684190-d6f23c3c-89b3-4662-b43f-58f58d837e77.png)
+![inserted_content](https://user-images.githubusercontent.com/124391569/230684990-7d34e06f-6a81-4f30-8a78-2a1cb9e22009.png)
 
 # *step 6: create a php script to connect to mysql & query the content*
 ```bash
@@ -164,6 +164,6 @@ try {
 }
 # you may now access the page on the browser using <ip/my_table.php>
 ```
-![web_page](sql_contents.png)
+![sql_contents](https://user-images.githubusercontent.com/124391569/230684407-c49e4710-25c5-4de3-bc71-925ec21c7d5a.png)
 # *voila! this concludes our lemp stack implementation.*
 
